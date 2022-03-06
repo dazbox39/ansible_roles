@@ -1,0 +1,7 @@
+# {{ ansible_managed }}
+
+SYSINFO
+=======
+
+Hostname: {{ ansible_fqdn }}
+IP:       {{ ansible_facts['default_ipv4']['address'] }}

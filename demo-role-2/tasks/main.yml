@@ -1,0 +1,10 @@
+---
+# tasks file for demo-role
+
+- name: create sysinfo.txt
+  template:
+    src: sysinfo.j2
+    dest: /etc/sysinfo.txt
+    owner: root
+    group: root
+    mode: 644
